@@ -36,6 +36,18 @@
 ### Query-String - https://www.npmjs.com/package/query-string
     npm i query-string
 
+### World Country - https://www.npmjs.com/package/world-countries
+    npm i world-countries
+
+### React Select - https://www.npmjs.com/package/react-select
+    npm i react-select
+
+### Leaflet - https://www.npmjs.com/package/leaflet
+    npm i leaflet
+    npm i -D @types/leaflet
+
+### React Leaflet - https://www.npmjs.com/package/react-leaflet
+    npm i react-leaflet
 
 # Preview
 
