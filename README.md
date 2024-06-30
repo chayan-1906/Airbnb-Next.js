@@ -49,5 +49,8 @@
 ### React Leaflet - https://www.npmjs.com/package/react-leaflet
     npm i react-leaflet
 
+### Next Cloudinary - https://next.cloudinary.dev/installation
+    npm install next-cloudinary
+
 # Preview
 
