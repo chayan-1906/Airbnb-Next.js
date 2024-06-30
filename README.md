@@ -52,5 +52,8 @@
 ### Next Cloudinary - https://next.cloudinary.dev/installation
     npm install next-cloudinary
 
+### Date-fns - https://www.npmjs.com/package/date-fns
+    npm i date-fns
+
 # Preview
 
