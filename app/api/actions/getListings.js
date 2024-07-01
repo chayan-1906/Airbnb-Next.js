@@ -4,7 +4,10 @@ export default async function getListings() {
             orderBy: {createdAt: 'desc'}
         });
 
-        return listings;
+        return listings.map((listing) => ({
+            ...listing,
+            createdAt: listing.createdAt.toISOString(),
+        }));
     } catch (e) {
         throw new Error(e);
     }

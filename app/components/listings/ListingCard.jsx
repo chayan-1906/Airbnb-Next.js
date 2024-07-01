@@ -7,6 +7,7 @@ import {format} from "date-fns";
 import Image from "next/image";
 import HeartButton from "@/app/components/HeartButton";
 import Button from "@/app/components/Button";
+import Link from "next/link";
 
 function ListingCard({listing, currentUser, reservation, onAction, disabled, actionLabel, actionId}) {
     let {id, title, imageSrc, locationValue, category} = listing;
@@ -41,7 +42,7 @@ function ListingCard({listing, currentUser, reservation, onAction, disabled, act
     }, [reservation]);
 
     return (
-        <div onClick={() => router.push(`/listings/${id}`)} className={'col-span-1 cursor-pointer group '}>
+        <Link href={`/listings/${id}`} target={'_blank'} className={'col-span-1 cursor-pointer group '}>
             <div className={'flex flex-col gap-2 w-full'}>
                 <div className={'aspect-square w-full relative overflow-hidden rounded-xl'}>
                     <Image src={imageSrc} alt={title} fill className={'object-cover h-full w-full group-hover:scale-110 transition'}/>
@@ -61,7 +62,7 @@ function ListingCard({listing, currentUser, reservation, onAction, disabled, act
                     <Button disabled small label={actionLabel} onClick={handleCancel}/>
                 )}
             </div>
-        </div>
+        </Link>
     );
 }
 
