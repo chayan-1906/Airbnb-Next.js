@@ -13,11 +13,13 @@ import {FcGoogle} from "react-icons/fc";
 import {AiFillGithub} from "react-icons/ai";
 import {signIn} from "next-auth/react";
 import useLoginModal from "@/app/hooks/useLoginModal";
+import {useRouter} from "next/navigation";
 
 function RegisterModal() {
     let registerModal = useRegisterModal();
     let loginModal = useLoginModal();
     const [isLoading, setIsLoading] = useState(false);
+    let router = useRouter();
 
     let {register, handleSubmit, formState: {errors}} = useForm({
         defaultValues: {
@@ -31,6 +33,21 @@ function RegisterModal() {
         setIsLoading(true);
 
         axios.post('/api/register', data).then(() => {
+            signIn('credentials', {
+                email: data.email,
+                password: data.password,
+                redirect: false,
+            }).then((callback) => {
+                if (callback?.ok) {
+                    toast.success('Logged in');
+                    router.refresh();
+                    loginModal.onClose();
+                }
+
+                if (callback?.error) {
+                    toast.error(callback?.error);
+                }
+            });
             registerModal.onClose();
         }).catch((error) => {
             console.log(error);

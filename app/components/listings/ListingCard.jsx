@@ -53,7 +53,7 @@ function ListingCard({listing, currentUser, reservation, onAction, disabled, act
                 <div className={'font-semibold text-lg'}>{location?.region}, {location?.label}</div>
                 <div className={'font-light text-neutral-500'}>{reservationDate || category}</div>
                 <div className={'flex items-center gap-1'}>
-                    <div className={'font-semibold'}>$ {price}</div>
+                    <div className={'font-semibold'}>₹ {price}</div>
                     {!reservationDate && (
                         <div className={'font-light'}>night</div>
                     )}

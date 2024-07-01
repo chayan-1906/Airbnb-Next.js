@@ -31,12 +31,10 @@ function CategoryBox({label, description, icon: Icon, selected}) {
     }, [label, params, router]);
 
     return (
-        <div onClick={handleClick} className={`flex flex-col items-center justify-center gap-2 p-3 border-b-2 hover:text-neutral-800 transition
+        <div onClick={handleClick} className={`flex flex-col flex-1 items-center justify-center text-center gap-2 p-3 border-b-2 hover:text-neutral-800 transition
                         ${selected ? 'border-b-neutral-800 text-neutral-800 cursor-default' : 'border-transparent text-neutral-500 cursor-pointer'}`}>
             <Icon size={26}/>
-            <div className={'font-medium text-sm'}>
-                {label}
-            </div>
+            <div className={'text-nowrap font-medium text-sm'}>{label}</div>
         </div>
     );
 }

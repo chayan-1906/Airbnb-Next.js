@@ -1,18 +1,75 @@
 import Container from "@/app/components/navbar/Container";
 import {TbBeach, TbMountain, TbPool} from "react-icons/tb";
-import {GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiWindmill} from "react-icons/gi";
+import {GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiWindmill, GiWoodCabin} from "react-icons/gi";
 import {MdOutlineVilla} from "react-icons/md";
 import CategoryBox from "@/app/components/CategoryBox";
 import {usePathname, useSearchParams} from "next/navigation";
 import {FaSkiing} from "react-icons/fa";
-import {BsSnow} from "react-icons/bs";
+import {BsFillCupHotFill, BsSnow} from "react-icons/bs";
 import {IoDiamond} from "react-icons/io5";
+import {PiFarm, PiParkFill} from "react-icons/pi";
+import {FcLandscape} from "react-icons/fc";
 
 export const categories = [
+    {
+        label: 'Castles',
+        icon: GiCastle,
+        description: 'This property is in a castle!'
+    },
+    {
+        label: 'Amazing Pools',
+        icon: TbPool,
+        description: 'This property has a pool!'
+    },
+    {
+        label: 'Caves',
+        icon: GiCaveEntrance,
+        description: 'This property is in a cave!'
+    },
+    {
+        label: 'National Parks',
+        icon: PiParkFill,
+        description: 'This property has park!'
+    },
     {
         label: 'BeachFront',
         icon: TbBeach,
         description: 'This property is close to the beach!'
+    },
+    {
+        label: 'Farms',
+        icon: PiFarm,
+        description: 'This property has farms!'
+    },
+    {
+        label: 'Treehouses',
+        icon: GiWindmill,
+        description: 'This property has treehouse!'
+    },
+    {
+        label: 'Cabins',
+        icon: GiWoodCabin,
+        description: 'This property has cabins!'
+    },
+    {
+        label: 'Lakefront',
+        icon: GiBoatFishing,
+        description: 'This property is close to a lake!'
+    },
+    {
+        label: 'Bed & breakfasts',
+        icon: BsFillCupHotFill,
+        description: 'This property will provide you complementary breakfasts!'
+    },
+    {
+        label: 'Countryside',
+        icon: FcLandscape,
+        description: 'This property is countryside!'
+    },
+    {
+        label: 'Camping',
+        icon: GiForestCamp,
+        description: 'This property has camping activities!'
     },
     {
         label: 'Windmills',
@@ -25,24 +82,9 @@ export const categories = [
         description: 'This property is modern!'
     },
     {
-        label: 'Countryside',
-        icon: TbMountain,
-        description: 'This property is countryside!'
-    },
-    {
-        label: 'Pools',
-        icon: TbPool,
-        description: 'This property has a pool!'
-    },
-    {
         label: 'Islands',
         icon: GiIsland,
         description: 'This property is on an island!'
-    },
-    {
-        label: 'Lake',
-        icon: GiBoatFishing,
-        description: 'This property is close to a lake!'
     },
     {
         label: 'Skiing',
@@ -50,24 +92,9 @@ export const categories = [
         description: 'This property has skiing activities!'
     },
     {
-        label: 'Castles',
-        icon: GiCastle,
-        description: 'This property is in a castle!'
-    },
-    {
-        label: 'Camping',
-        icon: GiForestCamp,
-        description: 'This property has camping activities!'
-    },
-    {
         label: 'Arctic',
         icon: BsSnow,
         description: 'This property is in arctic!'
-    },
-    {
-        label: 'Cave',
-        icon: GiCaveEntrance,
-        description: 'This property is in a cave!'
     },
     {
         label: 'Desert',
@@ -80,7 +107,7 @@ export const categories = [
         description: 'This property is in the barn!'
     },
     {
-        label: 'Lux',
+        label: 'Luxe',
         icon: IoDiamond,
         description: 'This property is luxurious!'
     },

@@ -1,10 +1,10 @@
-import {BiDollar} from "react-icons/bi";
+import {FaRupeeSign} from "react-icons/fa";
 
 function Input({id, label, type = 'text', disabled = false, formatPrice = false, required = false, register, errors}) {
     return (
         <div className={'w-full relative'}>
             {formatPrice && (
-                <BiDollar size={24} className={'text-neutral-700 absolute top-5 left-2'}/>
+                <FaRupeeSign size={24} className={'text-neutral-700 absolute top-5 left-2'}/>
             )}
             <input id={id} disabled={disabled} {...register(id, {required})} placeholder={' '} type={type}
                    className={`peer w-full p-4 pt-6 font-light bg-white border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed
