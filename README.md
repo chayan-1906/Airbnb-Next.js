@@ -73,5 +73,8 @@ Your app is ready to be deployed!
 ### Date-fns - https://www.npmjs.com/package/date-fns
     npm i date-fns
 
+### React Date Range - https://www.npmjs.com/package/react-date-range
+    npm i react-date-range
+
 # Preview
 

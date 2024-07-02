@@ -21,6 +21,7 @@
     "next-cloudinary": "^6.6.2",
     "query-string": "^9.0.0",
     "react": "^18",
+    "react-date-range": "^2.0.1",
     "react-dom": "^18",
     "react-hook-form": "^7.52.0",
     "react-hot-toast": "^2.4.1",
