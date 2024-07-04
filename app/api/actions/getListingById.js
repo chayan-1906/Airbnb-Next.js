@@ -1,3 +1,5 @@
+const prisma = require('../../libs/prismadb');
+
 export default async function getListingById(params) {
     console.log(`params inside getListingById - ${JSON.stringify(params)}`);
 

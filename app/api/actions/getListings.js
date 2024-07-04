@@ -1,3 +1,5 @@
+const prisma = require('../../libs/prismadb');
+
 export default async function getListings() {
     try {
         const listings = await prisma.listing.findMany({
