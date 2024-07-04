@@ -11,7 +11,7 @@ import RentModal from "@/app/components/modals/RentModal";
 const nunito = Nunito({subsets: ["latin"]});
 
 export const metadata = {
-    title: 'Airbnb',
+    title: 'Airbnb | Holiday rentals, cabins, beach houses & more',
     description: 'Holiday rentals, cabins, beach houses & more',
 };
 
