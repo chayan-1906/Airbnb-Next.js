@@ -3,7 +3,10 @@ const prisma = require('../../libs/prismadb');
 export default async function getListings() {
     try {
         const listings = await prisma.listing.findMany({
-            orderBy: {createdAt: 'desc'}
+            orderBy: {
+                // createdAt: 'desc'
+                title: 'asc',
+            }
         });
 
         return listings.map((listing) => ({

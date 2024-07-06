@@ -15,6 +15,7 @@ function useFavorite({listingId, currentUser}) {
     }, [currentUser, listingId]);
 
     const toggleFavourite = useCallback(async (e) => {
+        e.preventDefault();
         e.stopPropagation();
 
         if (!currentUser) {

@@ -25,6 +25,7 @@ async function getReservations(params) {
             },
             orderBy: {
                 createdAt: 'desc',
+                // title: 'asc',
             },
         });
 
