@@ -51,7 +51,10 @@ function UserMenu({currentUser}) {
                                         router.push('/trips');
                                         setIsOpened(false);
                                     }} label={'My Trips'}/>
-                                    <MenuItem onClick={() => {}} label={'My favorites'}/>
+                                    <MenuItem onClick={() => {
+                                        router.push('/favorites');
+                                        setIsOpened(false);
+                                    }} label={'My favorites'}/>
                                     <MenuItem onClick={() => {
                                         router.push('/reservations');
                                         setIsOpened(false);

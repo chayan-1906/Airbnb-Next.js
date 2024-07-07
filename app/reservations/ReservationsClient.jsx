@@ -47,4 +47,3 @@ function ReservationsClient({reservations, currentUser}) {
 }
 
 export default ReservationsClient;
-
