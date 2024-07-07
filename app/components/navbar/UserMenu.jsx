@@ -59,7 +59,10 @@ function UserMenu({currentUser}) {
                                         router.push('/reservations');
                                         setIsOpened(false);
                                     }} label={'My reservations'}/>
-                                    <MenuItem onClick={() => {}} label={'My properties'}/>
+                                    <MenuItem onClick={() => {
+                                        router.push('/properties');
+                                        setIsOpened(false);
+                                    }} label={'My properties'}/>
                                     <MenuItem onClick={rentModal.onOpen} label={'Airbnb my home'}/>
                                     <hr/>
                                     <MenuItem onClick={() => signOut()} label={'Logout'}/>

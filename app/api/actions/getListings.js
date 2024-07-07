@@ -1,8 +1,17 @@
 const prisma = require('../../libs/prismadb');
 
-export default async function getListings() {
+export default async function getListings(params) {
+    const {userId} = params;
+
+    let query = {};
+
+    if (userId) {
+        query.userId = userId;
+    }
+
     try {
         const listings = await prisma.listing.findMany({
+            where: query,
             orderBy: {
                 // createdAt: 'desc'
                 title: 'asc',

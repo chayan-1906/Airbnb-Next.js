@@ -5,8 +5,8 @@ import getListings from "@/app/api/actions/getListings";
 import ListingCard from "@/app/components/listings/ListingCard";
 import getCurrentUser from "@/app/api/actions/getCurrentUser";
 
-async function Home() {
-    let listings = await getListings();
+async function Home({searchParams}) {
+    let listings = await getListings(searchParams);
     let currentUser = await getCurrentUser();
 
     if (listings.length === 0) {
