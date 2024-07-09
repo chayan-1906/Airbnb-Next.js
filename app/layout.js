@@ -5,8 +5,9 @@ import ClientOnly from "@/app/components/ClientOnly";
 import RegisterModal from "@/app/components/modals/RegisterModal";
 import ToasterProvider from "@/app/providers/ToasterProvider";
 import LoginModal from "@/app/components/modals/LoginModal";
-import getCurrentUser, {fetchFromWindow} from "@/app/api/actions/getCurrentUser";
+import getCurrentUser from "@/app/api/actions/getCurrentUser";
 import RentModal from "@/app/components/modals/RentModal";
+import SearchModal from "@/app/components/modals/SearchModal";
 
 const nunito = Nunito({subsets: ["latin"]});
 
@@ -26,6 +27,7 @@ async function RootLayout({children}) {
             <ToasterProvider/>
             <LoginModal/>
             <RegisterModal/>
+            <SearchModal/>
             <RentModal/>
             <Navbar currentUser={currentUser}/>
         </ClientOnly>

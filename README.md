@@ -76,5 +76,9 @@ Your app is ready to be deployed!
 ### React Date Range - https://www.npmjs.com/package/react-date-range
     npm i react-date-range
 
+### React Spinner - https://www.davidhu.io/react-spinners/
+
+    npm install react-spinners --save
+
 # Preview
 
