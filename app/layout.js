@@ -12,9 +12,14 @@ import SearchModal from "@/app/components/modals/SearchModal";
 const nunito = Nunito({subsets: ["latin"]});
 
 export const metadata = {
-    title: 'Airbnb | Holiday rentals, cabins, beach houses & more',
+    // title: 'Airbnb | Holiday rentals, cabins, beach houses & more',
+    title: {
+        absolute: '',
+        default: 'Airbnb | Holiday rentals, cabins, beach houses & more',
+        template: '%s | Airbnb',
+    },
     description: 'Holiday rentals, cabins, beach houses & more',
-};
+}
 
 async function RootLayout({children}) {
     const currentUser = await getCurrentUser();
