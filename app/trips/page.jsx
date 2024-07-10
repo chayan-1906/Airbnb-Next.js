@@ -3,6 +3,39 @@ import ClientOnly from "@/app/components/ClientOnly";
 import EmptyState from "@/app/components/EmptyState";
 import getReservations from "@/app/api/actions/getReservations";
 import TripsClient from "@/app/trips/TripsClient";
+import {keywords, webClientUrl} from "@/app/api/actions/constants";
+
+export async function generateMetadata({params, searchParams}, parent) {
+    let currentUser = await getCurrentUser();
+    let reservations = await getReservations({userId: currentUser.id});
+
+    const title = 'Trips';
+    const description = '';
+    const icons = (await parent).icons ?? {};
+
+    const metadata = {
+        title: title,
+        description: description,
+        url: webClientUrl,
+        keywords: keywords,
+        type: 'website',
+        icons,
+        openGraph: {
+            title: title,
+            description: description,
+            url: webClientUrl,
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: title,
+            description: description,
+            url: webClientUrl,
+        },
+    }
+
+    return metadata;
+}
 
 async function TripsPage() {
     let currentUser = await getCurrentUser();
