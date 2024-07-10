@@ -6,9 +6,6 @@ import TripsClient from "@/app/trips/TripsClient";
 import {keywords, webClientUrl} from "@/app/api/actions/constants";
 
 export async function generateMetadata({params, searchParams}, parent) {
-    let currentUser = await getCurrentUser();
-    let reservations = await getReservations({userId: currentUser.id});
-
     const title = 'Trips';
     const description = '';
     const icons = (await parent).icons ?? {};
