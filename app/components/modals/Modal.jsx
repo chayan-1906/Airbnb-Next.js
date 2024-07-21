@@ -46,7 +46,7 @@ function Modal({isOpen, onClose, onSubmit, title, body, footer, actionLabel, dis
                                 <button onClick={onClose} className={'p-1 border-0 hover:opacity-70 transition absolute left-9'}>
                                     <IoMdClose size={18}/>
                                 </button>
-                                <div className={'text-lg font-semibold'}>{title}</div>
+                                <div className={'text-xl font-semibold'}>{title}</div>
                             </div>
 
                             {/** body & footer */}
