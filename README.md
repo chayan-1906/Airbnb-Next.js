@@ -80,5 +80,20 @@ Your app is ready to be deployed!
 
     npm install react-spinners --save
 
+
 # Preview
 
+<table>
+    <tr>
+        <td><img src="https://github.com/user-attachments/assets/6f6a7a86-f010-44cf-9cb0-b5cb085135eb" alt="Login Modal" width="480px"/></td>
+        <td><img src="https://github.com/user-attachments/assets/4217fb92-48e0-4266-9ff0-de0b6f9dfc0f" alt="Listings" width="480px"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/user-attachments/assets/48ce99ad-088c-4735-8921-1f2132e211ee" alt="Listing Details" width="480px"/></td>
+        <td><img src="https://github.com/user-attachments/assets/975e5c11-053c-4358-aa98-99d76ff1135b" alt="Trips" width="480px"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/user-attachments/assets/db0a1e60-906f-4d96-9846-72fea8ad916e" alt="Favorites" width="480px"/></td>
+        <td><img src="https://github.com/user-attachments/assets/af15051c-1625-433c-8c4c-1c309e7ee848" alt="Airbnb Your Home" width="480px"/></td>
+    </tr>
+</table>
