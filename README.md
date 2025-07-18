@@ -9,7 +9,7 @@
 
 > Full-stack Airbnb clone built with Next.js 14, featuring property listings, booking system, user authentication, search filters, favorites, and interactive maps. 🔐 NextAuth • 🗄️ MongoDB • 🎨 Tailwind CSS • 📱 Responsive Design
 
-![logo](https://github.com/user-attachments/assets/262f08a7-c915-477e-98a3-0b521cdafcb6)
+![logo](https://raw.githubusercontent.com/chayan-1906/Airbnb-Next.js/master/public/images/logo.png)
 
 ## ✨ Features
 
